@@ -1,0 +1,11 @@
+stages:
+  - run
+  
+
+run-script:
+  tags: 
+    - shell
+  stage: run  
+  script:
+    - bash export_import_dir_concul.sh
+  when: manual
